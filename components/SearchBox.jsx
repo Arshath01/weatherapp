@@ -24,7 +24,7 @@ export default function SearchBox({data}){
 
 function getName({data,refValue}){
     const matchingName = []
-    const match =data.filter(name=>name.name.includes(refValue));
+    const match =data.filter(name=>name.name.toLowerCase().includes(refValue.toLowerCase()));
     matchingName.length < 5 && match.map(match=>matchingName.push(match))
     
     return match;
