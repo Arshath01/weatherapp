@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import '../styles/Bootstrap/node_modules/bootstrap/dist/css/bootstrap.css'
-  
+import '../styles/css/global.css'
 
 function MyApp({ Component, pageProps }) {
   return (

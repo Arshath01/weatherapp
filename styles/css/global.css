@@ -1,0 +1,14 @@
+#current_wrapper{
+    max-width: 800px;
+   display: flex;
+}
+#search_box{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+#search_elements{
+    text-decoration: none !important;
+    color: black;
+}
