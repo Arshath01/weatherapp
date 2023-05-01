@@ -3,7 +3,7 @@ import React,{ useState} from 'react';
 
 export default function SearchBox({data}){
     const [value,setValue] = useState("")
-    const refValue = value.length>3 && value;
+    const refValue = value.length>3 && value.toLowerCase();
     console.log(data)
 
     const name = getName({data,refValue});
@@ -24,7 +24,7 @@ export default function SearchBox({data}){
 
 function getName({data,refValue}){
     const matchingName = []
-    const match =data.filter(name=>name.name.toLowerCase().includes(refValue.toLowerCase()));
+    const match =data.filter(name=>name.name.toLowerCase().includes(refValue));
     matchingName.length < 5 && match.map(match=>matchingName.push(match))
     
     return match;
