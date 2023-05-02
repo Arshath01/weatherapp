@@ -16,9 +16,16 @@
     max-width: 800px;
     display: flex;
 }
-@media (max-width:680px){
+@media (max-width:700px){
     #section{
         overflow-x: scroll;
+        max-width: 700px;
+    }
+    #Hourly_inner_wrap{
+        display: flex;
+        flex-direction: column;
+        min-width: 180px;
+        min-height: 150px;
     }
 }
 #Hourly_inner_wrap{
