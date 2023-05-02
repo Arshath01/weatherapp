@@ -12,3 +12,16 @@
     text-decoration: none !important;
     color: black;
 }
+#section{
+    max-width: 800px;
+    display: flex;
+}
+@media (max-width:680px){
+    #section{
+        overflow-x: scroll;
+    }
+}
+#Hourly_inner_wrap{
+    width: 220px;
+    height: 120px;
+}

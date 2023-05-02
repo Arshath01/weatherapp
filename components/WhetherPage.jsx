@@ -1,6 +1,8 @@
 import { useEffect,useState } from "react";
-export default function WhetherPage(props){
+import HourlyWhether from './HourlyWhether'
 
+export default function WhetherPage(props){
+    const data = props;
     const [current_time,setTime] = useState(null);
 
     useEffect(()=>{
@@ -12,6 +14,7 @@ export default function WhetherPage(props){
 
     return (
         <>
+          
             <div id="current_wrapper" className="container mx-auto bg-primary p-1 m-2 rounded text-light">
                 <div className="ms-3 m-2">
                     <h2>{props.location.name}</h2>
@@ -24,6 +27,9 @@ export default function WhetherPage(props){
                     <span className="my-auto"><b>{props.current.condition.text}</b></span>
                 </div>
             </div>
+
+            <section id="section" className="mx-auto gap-1"><HourlyWhether data={data}/></section>
+          
         </>
     )
 }
