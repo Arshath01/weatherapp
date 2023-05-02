@@ -12,7 +12,7 @@ export default function City({city,matchingCity,fetchedData}) {
   export async function getServerSideProps(context){
     const {city} = context.params;
     const getcity = getCity(city)
-    const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d8ef69b0aad74baaa4e04717230205&q=${city}&days=2&aqi=no&alerts=no`)
+    const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d8ef69b0aad74baaa4e04717230205&q=${city}&days=7&aqi=no&alerts=no`)
     const data = await res.json()
     return {
         props:{
@@ -29,5 +29,7 @@ export default function City({city,matchingCity,fetchedData}) {
     const match = jsonData.find(name => name.name==city);
      if (match){
         return match
+     }else {
+      return null
      }
   }

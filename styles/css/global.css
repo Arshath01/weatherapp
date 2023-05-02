@@ -1,6 +1,11 @@
 #current_wrapper{
     max-width: 800px;
-   display: flex;
+    color: white !important;
+    font-weight: bolder !important;
+    background-image: url('https://images.pexels.com/photos/2249961/pexels-photo-2249961.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-position: center;
+    background-size: cover;
+    display: flex;
 }
 #search_box{
     max-width: 800px;
@@ -16,19 +21,61 @@
     max-width: 800px;
     display: flex;
 }
+#Hourly_inner_wrap {
+    background-color: rgb(158, 82, 162);
+    color: white;
+    min-width: 150px;
+    min-height: 150px;
+    background-image: url('https://images.pexels.com/photos/3609832/pexels-photo-3609832.jpeg?auto=compress&cs=tinysrgb&w=600');
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Hourly_inner_wrap:hover {
+    transform: scale(1.011);
+}
 @media (max-width:700px){
+    #current_wrapper{
+        max-width: 410px;
+    }
     #section{
         overflow-x: scroll;
-        max-width: 700px;
+        max-width: 410px;
     }
     #Hourly_inner_wrap{
         display: flex;
         flex-direction: column;
-        min-width: 180px;
+        min-width: 190px;
         min-height: 150px;
     }
+    #weekly_whether {
+        width: 410px;
+
+    }
+    
 }
 #Hourly_inner_wrap{
     width: 220px;
     height: 120px;
 }
+#weekly_whether {
+    max-width: 800px;
+}
+#astro{
+    position: absolute;
+    left: 40%;
+}
+#img{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 47%;
+}
+#week_wrap{
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/4969107/pexels-photo-4969107.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
