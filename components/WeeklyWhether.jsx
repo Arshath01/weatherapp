@@ -1,7 +1,7 @@
-export default function ({ data }) {
+export  default function ({ data }) {
 	console.log("whether:", data)
 
-	const Weekly = ({ dayIndex,bg,deg }) => {
+	const Weekly = ({ dayIndex}) => {
 		const raw_date = data.forecast.forecastday[dayIndex].date;
 		const condition = data.forecast.forecastday[dayIndex].day;
 		const condition_report = {
@@ -51,11 +51,11 @@ export default function ({ data }) {
 	}
 	return (
 		<>
-			<Weekly dayIndex={0} bg="bg-info" />
-		  <Weekly dayIndex={1} bg="bg-primary"/>
-			<Weekly dayIndex={2} bg="bg-info" />
-			<Weekly dayIndex={3} bg="bg-primary" />
-			<Weekly dayIndex={4} bg="bg-info"/>
+			<Weekly dayIndex={0} />
+		  <Weekly dayIndex={1} />
+			<Weekly dayIndex={2} />
+			<Weekly dayIndex={3} />
+			<Weekly dayIndex={4} />
 		</>
 	)
 }

@@ -16,7 +16,7 @@ export default function WhetherPage(props){
     return (
         <>
           
-            <div id="current_wrapper" className="container mx-auto bg-primary p-3 m-2 rounded text-light">
+            <div id="current_wrapper" className="container mx-auto  p-3 m-2 rounded text-light">
                 <div className="ms-3 m-2">
                     <h2 className="text-dark">{props.location.name}</h2>
                     <h5 className="text-secondary">{props.location.region}</h5>
