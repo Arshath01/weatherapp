@@ -17,7 +17,8 @@ export  default function ({ data }) {
 			"Wednesday",
 			"Thursday",
 			"Friday",
-			"Saturday"
+			"Saturday",
+			"Sunday",
 		]
 
 		// getDay by Date
@@ -52,7 +53,7 @@ export  default function ({ data }) {
 	return (
 		<>
 			<Weekly dayIndex={0} />
-		  <Weekly dayIndex={1} />
+		  	<Weekly dayIndex={1} />
 			<Weekly dayIndex={2} />
 			<Weekly dayIndex={3} />
 			<Weekly dayIndex={4} />

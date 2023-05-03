@@ -35,7 +35,7 @@ export default function HourlyWhether({ data }) {
             <h5>{temp}&deg;C</h5>
             <small>{ampm}</small>
           </div>
-          <div className="report ">
+          <div className="report ms-auto">
             <img src={condition_report.icon} alt="whether_icon" /> <br />
             <small className="mx-autto">{condition_report.text}</small>
           </div>

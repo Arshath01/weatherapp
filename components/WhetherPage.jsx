@@ -18,8 +18,8 @@ export default function WhetherPage(props){
           
             <div id="current_wrapper" className="container mx-auto  p-3 m-2 rounded text-light">
                 <div className="ms-3 m-2">
-                    <h2 className="text-dark">{props.location.name}</h2>
-                    <h5 className="text-secondary">{props.location.region}</h5>
+                    <h2 className="text-light">{props.location.name}</h2>
+                    <p className="text-light">{props.location.country}</p>
                     <small>{props.current.temp_c}&deg;C</small>
                 </div>
                 <div className="ms-auto me-4 p-1">

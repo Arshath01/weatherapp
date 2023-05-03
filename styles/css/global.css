@@ -3,13 +3,13 @@
     max-width: 800px;
     color: white !important;
     font-weight: bolder !important;
-    background-image: url('https://images.pexels.com/photos/2249961/pexels-photo-2249961.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-image: url('https://media.istockphoto.com/id/1409931022/photo/man-in-yellow-jacket-sitting-on-a-suspension-bridge-over-a-lake-in-olpererhutte-austria.jpg?b=1&s=612x612&w=0&k=20&c=qihMkiJL8EZXthpfhChk-kLeroIUqmExwXvcPyIutkw=');
     background-position: center;
     background-size: cover;
     display: flex;
 }
 #search_box{
-    max-width: 800px;
+    max-width: 770px;
     display: flex;
     flex-direction: column;
 }
@@ -22,11 +22,42 @@
     max-width: 800px;
     display: flex;
 }
+.spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #3498db;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  p {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
 #Hourly_inner_wrap {
     color: white;
     min-width: 150px;
     min-height: 150px;
-    background-image: url('https://images.pexels.com/photos/3609832/pexels-photo-3609832.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-image: url('https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=600');
    
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,7 +91,9 @@
     }
     #famousCities{
         flex-basis: 48%;
+        width: 142px !important;
     }
+
 }
 #Hourly_inner_wrap{
     width: 220px;
@@ -89,6 +122,7 @@
 #famousCities {
     width: 160px;
     height: 200px;
+    z-index: 1;
 }
 #cities_wrap{
     text-align: center;

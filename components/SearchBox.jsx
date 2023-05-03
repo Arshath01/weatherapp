@@ -16,7 +16,8 @@ export default function SearchBox({ data }) {
 
    return (
       <>
-         <div className="container mt-4 p-5" id="search_box">
+         <div className="container mt-2 p-5" id="search_box">
+            <h1 className='text-center mb-4'>Weather <span className='text-primary'>Wizard</span></h1>
             <input
                type="text"
                value={value}
