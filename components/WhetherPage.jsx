@@ -10,7 +10,7 @@ export default function WhetherPage(props){
         const time = new Date;
         const hours = time.getHours();
         const minutes = time.getMinutes().toString();
-        setTime(hours>12?(hours-12).toString()+":"+minutes+" pm":hours.toString()+":"+minutes+" am");
+        setTime(hours>12?(hours-12).toString()+":0"+minutes+" pm":hours.toString()+":"+minutes+" am");
     },[])
 
     return (
@@ -19,7 +19,7 @@ export default function WhetherPage(props){
             <div id="current_wrapper" className="container mx-auto  p-3 m-2 rounded text-light">
                 <div className="ms-3 m-2">
                     <h2 className="text-light">{props.location.name}</h2>
-                    <p className="text-light">{props.location.country}</p>
+                    <small className="text-light">{props.location.country}</small> <br />
                     <small>{props.current.temp_c}&deg;C</small>
                 </div>
                 <div className="ms-auto me-4 p-1">

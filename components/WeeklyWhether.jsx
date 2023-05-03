@@ -45,7 +45,7 @@ export  default function ({ data }) {
 
 					<div className="d-flex flex-column">
 						<img src={condition_report.icon} id="img" alt="" />
-						<span id="text"><b>{condition_report.text}</b></span>
+						<small id="text"><b>{condition_report.text}</b></small>
 					</div>
 			</div>
 		)
