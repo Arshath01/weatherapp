@@ -10,7 +10,7 @@ export default function WhetherPage(props){
         const time = new Date;
         const hours = time.getHours();
         const minutes = time.getMinutes().toString();
-        setTime(hours>12?(hours-12).toString()+":0"+minutes+" pm":hours.toString()+":"+minutes+" am");
+        setTime(hours>12?(hours-12).toString()+":"+minutes+" pm":hours.toString()+":"+minutes+" am");
     },[])
 
     return (
