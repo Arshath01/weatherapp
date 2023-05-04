@@ -4,15 +4,8 @@ import WeeklyWhether from './WeeklyWhether'
 
 export default function WhetherPage(props){
     const data = props;
-    const [current_time,setTime] = useState(null);
-
-    useEffect(()=>{
-        const time = new Date;
-        const hours = time.getHours();
-        const minutes = time.getMinutes().toString();
-        setTime(hours>12?(hours-12).toString()+":"+minutes+" pm":hours.toString()+":"+minutes+" am");
-    },[])
-
+    const time = data.location.localtime.split(" ")
+    const localtime = time[time.length-1]
     return (
         <>
           
@@ -23,7 +16,7 @@ export default function WhetherPage(props){
                     <small>{props.current.temp_c}&deg;C</small>
                 </div>
                 <div className="ms-auto me-4 p-1">
-                    <h4 className="ms-5 mt-2">{current_time}</h4>
+                    <h4 className="ms-5 mt-2">{localtime}</h4>
                     <img src={props.current.condition.icon} alt="" />
                     <span className="my-auto"><b>{props.current.condition.text}</b></span>
                 </div>

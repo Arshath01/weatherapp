@@ -30,14 +30,14 @@ export default function HourlyWhether({ data }) {
 
     return (
       <>
-        <div id="Hourly_inner_wrap" className=" mx-auto container px-2 pb-2 border border-primary rounded">
+        <div id="Hourly_inner_wrap" className=" mx-auto container px-2 pb-2 rounded">
           <div className="d-flex justify-content-between p-2">
             <h5>{temp}&deg;C</h5>
             <small>{ampm}</small>
           </div>
           <div className="report ms-auto">
             <img src={condition_report.icon} alt="whether_icon" /> <br />
-            <small className="mx-autto">{condition_report.text}</small>
+            <small className="mx-auto">{condition_report.text}</small>
           </div>
         </div>
       </>
